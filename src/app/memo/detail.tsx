@@ -2,7 +2,7 @@ import { View, Text, ScrollView, StyleSheet } from 'react-native'
 
 import CircleButton from '../../components/CircleButton'
 import Icon from '../../components/icon'
-import {router} from "expo-router";
+import { router } from "expo-router"
 
 const handlePress = () => {
     router.push('/memo/edit')

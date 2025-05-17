@@ -1,7 +1,7 @@
 import { View, TextInput, StyleSheet, KeyboardAvoidingView} from "react-native"
-import CircleButton from "../../components/CircleButton";
-import Icon from "../../components/icon";
-import {router} from "expo-router";
+import CircleButton from "../../components/CircleButton"
+import Icon from "../../components/icon"
+import {router} from "expo-router"
 
 const handlePress = () => {
     router.back()
@@ -22,7 +22,7 @@ const Edit = ():JSX.Element => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
+        flex: 1
     },
     inputContainer: {
         paddingVertical: 32,
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         flex: 1,
         textAlignVertical: 'top',
         fontSize: 16,
-        lineHeight: 24,
+        lineHeight: 24
     }
 })
 

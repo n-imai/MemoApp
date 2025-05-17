@@ -5,7 +5,7 @@ import Button from "../../components/Button"
 import { Link, router } from "expo-router"
 
 const handlePress = () => {
-    router.push('/memo/list')
+    router.replace('/memo/list')
 }
 
 const LogIn = () => {
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
     },
     inner: {
         paddingVertical: 24,
-        paddingHorizontal: 27,
+        paddingHorizontal: 27
     },
     title: {
         fontSize: 24,
