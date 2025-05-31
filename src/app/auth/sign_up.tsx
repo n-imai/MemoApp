@@ -55,7 +55,7 @@ const SignUp = () => {
                 <Button label='Submit' onPress={()=>{handlePress(email, password)}} />
                 <View style={styles.footer}>
                     <Text style={styles.footerText}>Already registered?</Text>
-                    <Link href={'/auth/log_in'} asChild>
+                    <Link href={'/auth/log_in'} asChild replace>
                         <TouchableOpacity>
                             <Text style={styles.footerLink}>Log in.</Text>
                         </TouchableOpacity>
