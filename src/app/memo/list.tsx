@@ -1,4 +1,4 @@
-import { View, StyleSheet } from "react-native"
+import { View, StyleSheet, FlatList } from "react-native"
 
 import MemoListItem from "../../components/MemoListItem"
 import CircleButton from "../../components/CircleButton"
@@ -43,14 +43,15 @@ const List = ():JSX.Element => {
       return unsubscribe
     }, [])
   return (
-    <View style={styles.container}>
-      <View>
-          {memos.map((memo) => <MemoListItem key={memo.id} memo={memo} />)}
+      <View style={styles.container}>
+          <FlatList
+              data={memos}
+              renderItem={({ item }) => <MemoListItem memo={item} />}
+          />
+          <CircleButton onPress={handlePress}>
+            <Icon name='plus' size={32} color="#ffffff"/>
+          </CircleButton>
       </View>
-      <CircleButton onPress={handlePress}>
-        <Icon name='plus' size={32} color="#ffffff"/>
-      </CircleButton>
-    </View>
   )
 }
 
